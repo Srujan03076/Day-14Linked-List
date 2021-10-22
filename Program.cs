@@ -10,7 +10,20 @@ namespace DataStructureDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Linked List");
+            LinkedList<int> list = new LinkedList<int>();
+            list.AddLast(56);
+            list.AddLast(30);
+            list.AddLast(70);
+
+
+            foreach (var x in list)
+            {
+                Console.WriteLine(x);
+                Console.ReadKey();
+            }
         }
     }
 }
+
+
+            
