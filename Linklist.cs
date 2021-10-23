@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace DataStructureDemo
 {/// <summary>
 /// Template for testing linked list
@@ -51,6 +52,12 @@ namespace DataStructureDemo
             //The previous Head node is now the second node of the linked list because the new node is added at the front 
             this.head = new_node;
             Console.WriteLine("Inserted into list" + new_node.data);
+        }
+
+        //Method for Appending elements at last in the list
+        public void Append(int new_data)
+        {
+            InsertLast(new_data);
         }
 
         //method for displaying elements in linked list

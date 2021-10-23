@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 namespace DataStructureDemo
 {
     class Program
@@ -15,9 +16,9 @@ namespace DataStructureDemo
             //list.AddLast(70);
 
             CustomLinkedList customLinkedList = new CustomLinkedList();
-            customLinkedList.InsertFront(70);
-            customLinkedList.InsertFront(30);
-            customLinkedList.InsertFront(56);
+            customLinkedList.Append(56);
+            customLinkedList.Append(30);
+            customLinkedList.Append(70);
             customLinkedList.Display();
             Console.ReadLine();
         }
