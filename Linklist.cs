@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace DataStructureDemo
 {/// <summary>
 /// Template for testing linked list
 /// </summary>
     class CustomLinkedList
     {/// <summary>
-     /// UC2 insert a element at front in linked list
+     /// UC5 delete a first element in linked list
      /// </summary>
         Node head;
 
@@ -82,6 +81,18 @@ namespace DataStructureDemo
             }
             new_node.next = pos.next;
             pos.next = new_node;
+        }
+
+        //method to delete first node
+        public int DeleteFirstNode()
+        {
+            if (this.head == null)
+            {
+                return 0;
+            }
+            int deleteNode = this.head.data;
+            this.head = this.head.next;
+            return deleteNode;
         }
 
         //method for displaying elements in linked list
